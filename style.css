@@ -1,0 +1,488 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #000;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+
+.contenedor_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 2rem;
+    background-color: #000;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo img {
+    height: 45px;
+}
+
+.boton-home img {
+    height: 50px;
+    width: 50px;
+    background-color: #1f1f1f;
+    border-radius: 50%;
+    padding: 0.8rem;
+    transition: 0.2s;
+}
+
+.boton-home img:hover {
+    background-color: #333;
+}
+
+.busqueda {
+    width: 30%;
+    position: relative;
+}
+
+.busqueda input {
+    width: 100%;
+    padding: 1.2rem 4rem;
+    border-radius: 50px;
+    background-color: #242424;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.busqueda .icon {
+    position: absolute;
+    left: 1.5rem;
+    top: 1.1rem;
+    color: white;
+}
+
+.navegacion ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.navegacion a {
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+
+.navegacion a:hover {
+    color: white;
+}
+
+.sing_in a {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.sing_in a:hover {
+    transform: scale(1.05);
+}
+
+main {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.barra_lateral {
+    width: 22%;
+    background-color: #121212;
+    border-radius: 10px;
+    padding: 2rem;
+    
+    overflow-x: auto;
+}
+a.boton {
+    text-decoration: none;
+
+}
+
+.biblioteca_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.biblioteca_header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.biblioteca_header .cruz {
+    font-size: 2.5rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: #b3b3b3;
+}
+
+.biblioteca_header .cruz:hover {
+    background-color: #1f1f1f;
+}
+
+.cuadro1 {
+    background-color: #242424;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.cuadro1 h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.cuadro1 p {
+    font-size: 1.4rem;
+    color: #b3b3b3;
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: black;
+    width: fit-content;
+    margin-top: 1.2rem;
+    transition: 0.2s;
+}
+
+.boton:hover {
+    background-color: #d9d9d9;
+    transform: scale(1.05);
+}
+
+.pie_de_pagina p {
+    font-size: 1.2rem;
+    color: #b3b3b3;
+    margin-bottom: 0.5rem;
+}
+
+.pie_de_pagina p:hover {
+    color: white;
+}
+
+.principal_musica {
+    width: 78%;
+    background-color: #121212;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.principal_musica h1 {
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+}
+
+.carrosel1 {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    padding: 1rem;
+    padding: 1rem;
+    margin-bottom: 3rem;
+    min-height: 25rem;
+    scrollbar-width: none;
+    
+    
+    
+}
+img1 {
+    flex: 1 0 auto;
+    margin: 0 50px;
+    margin: 1rem;
+    
+}
+
+.img {
+    height: 25rem;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.img:hover {
+    transform: scale(1.03);
+}
+
+.img10 {
+    height: 22rem;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.img10:hover {
+    transform: scale(1.05);
+}
+
+/* --------------------------- */
+/* RESPONSIVE TABLET (≤ 1024px) */
+/* --------------------------- */
+@media (max-width: 1024px) {
+    .barra_lateral {
+        width: 30%;
+    }
+    .principal_musica {
+        width: 70%;
+    }
+    .busqueda {
+        width: 40%;
+    }
+    .boton {
+        font-size: 1.4rem;
+        padding: 1rem 2rem;
+    }
+}
+
+
+/* RESPONSIVE MOBILE (768px) */
+
+@media (max-width: 768px) {
+    .barra_lateral {
+        display: none;
+    }
+    .principal_musica {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .contenedor_nav {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .logo img {
+        height: 35px;
+    }
+
+    .busqueda {
+        width: 100%;
+        order: 3;
+    }
+
+    .busqueda input {
+        padding: 1rem 3rem;
+        font-size: 1.4rem;
+    }
+
+    .navegacion {
+        display: none;
+    }
+
+    .sing_in a {
+        font-size: 1.3rem;
+        padding: .8rem 1.5rem;
+    }
+
+    .img {
+        height: 18rem;
+    }
+    .img10 {
+        height: 16rem;
+    }
+    h1 {
+        font-size: 1.8rem;
+        margin-left: 2px;
+    }
+    
+} 
+
+
+/* RESPONSIVE MOBILE SMALL (≤ 480px) */
+
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    .img {
+        height: 16rem;
+    }
+    .img10 {
+        height: 14rem;
+    }
+    .boton {
+        font-size: 1.3rem;
+        padding: 0.8rem 1.8rem;
+    }
+}
+
+
+/* reproductor spotify  */
+
+
+.player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background-color: #181818;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    border-top: 1px solid #282828;
+    z-index: 999;
+}
+
+
+ /* IZQUIERDA: portada + info  */
+
+
+.player-left {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    width: 25%;
+}
+
+.player-cover {
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+}
+
+.player-info h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.player-info p {
+    font-size: 1.2rem;
+    color: #b3b3b3;
+}
+
+
+/* CENTRO: botones + tiempo  */
+
+
+.player-center {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-buttons {
+    display: flex;
+    gap: 2rem;
+    font-size: 2.2rem;
+    color: #b3b3b3;
+}
+
+.player-buttons i:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.play-btn {
+    font-size: 2.8rem;
+    padding: .6rem;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+}
+
+.play-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Barra de progreso */
+.player-progress {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 0.8rem;
+}
+
+.player-progress input[type="range"] {
+    width: 100%;
+    accent-color: #1db954; /* verde spotify */
+}
+
+.player-progress span {
+    font-size: 1.2rem;
+    color: #b3b3b3;
+}
+
+/* -------------------------- */
+/* DERECHA: volumen          */
+/* -------------------------- */
+
+.player-right {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: flex-end;
+    font-size: 2rem;
+    color: #b3b3b3;
+}
+
+.player-right input[type="range"] {
+    width: 110px;
+    accent-color: #1db954;
+}
+
+/* -------------------------- */
+/* RESPONSIVE PLAYER          */
+/* -------------------------- */
+
+@media (max-width: 768px) {
+    .player {
+        height: 75px;
+        padding: 0 1rem;
+    }
+
+    .player-left {
+        width: 40%;
+    }
+
+    .player-center {
+        display: none; 
+    }
+
+    .player-right input[type="range"] {
+        width: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .player-left .player-cover {
+        width: 45px;
+        height: 45px;
+    }
+
+    .player-info h3 {
+        font-size: 1.2rem;
+    }
+
+    .player-info p {
+        font-size: 1rem;
+    }
+}
