@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./img/logo-spotify.png" type="image/x-icon" />
 
-    <!-- Tipografía estilo Spotify -->
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap">
 
-    <!-- Estilos -->
+
     <link rel="stylesheet" href="style.css" />
 
-    <!-- Iconos Flaticon -->
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons@3.3.1/css/all/all.min.css" />
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons@3.3.1/css/all/all.min.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Spotify</title>
 </head>
 
@@ -33,20 +34,20 @@
         <div class="busqueda">
             <form class="search-box">
                 <input type="text" placeholder="¿Qué quieres escuchar?" />
-                
-                    <i class="fi fi-rs-search icon"></i>
-                
+
+                <i class="fi fi-rs-search icon"></i>
+
             </form>
         </div>
 
         <nav class="navegacion">
             <ul>
-                <li><a href="#">Premium</a></li>
-                <li><a href="#">Asistencia</a></li>
-                <li><a href="#">Descarga</a></li>
-                <li><a href="#"><i class="fi fi-rr-tally-1 icon2"></i></a></li>
-                <li><a href="#"><i class="fi fi-rr-search"></i> Instalar app</a></li>
-                <li><a href="registro.html">Regístrate</a></li>
+                <li><a href="https://www.spotify.com/co-es/premium/">Premium</a></li>
+                <li><a href="https://support.spotify.com/co-es/">Asistencia</a></li>
+                <li><a href="https://open.spotify.com/download" target="_blank">Descarga</a></li>
+                <li><a href=""><i class="fi fi-rr-tally-1 icon2"></i></a></li>
+                <li><a href="https://open.spotify.com/download" target="_blank"><i class="fi fi-rr-search"></i> Instalar app</a></li>
+                <li><a href="registro.html" target="_blank">Regístrate</a></li>
             </ul>
         </nav>
 
@@ -56,7 +57,7 @@
     </header>
 
     <main>
-       
+
         <aside class="barra_lateral">
             <div class="contenido">
 
@@ -68,22 +69,27 @@
                 <div class="cuadro1">
                     <h1>Crea tu primera lista</h1>
                     <p>Es muy fácil y te echaremos una mano.</p>
-                    <a class="boton" href="sign_in.html" target="_blank">Crear lista</a>
+                    <a class="boton" href="sing_in.html" target="_blank">Crear lista</a>
                 </div>
 
                 <div class="cuadro1">
                     <h1>Encuentra los pódcast que quieras seguir</h1>
                     <p>Te avisaremos cuando salgan nuevos episodios.</p>
-                    <a class="boton" href="sign_in.html" target="_blank">Explorar pódcast</a>
+                    <a class="boton" href="album.html" target="_blank">Explorar pódcast</a>
                 </div>
 
-                <footer class="pie_de_pagina">
-                    <p><a href="#">Legal</a></p>
-                    <p><a href="#">Privacidad</a></p>
-                    <p><a href="#">Cookies</a></p>
-                    <p><a href="#">Información</a></p>
-                    <p><a href="#">Centro de ayuda</a></p>
+                <footer class=" container mt-5 pie_de_pagina">
+                    <a href="https://www.spotify.com/co-es/legal/end-user-agreement/">Legal</a>
+                    <a href="https://www.spotify.com/co-es/legal/privacy-policy/">Privacidad</a>
+                    <a href="https://www.spotify.com/co-es/legal/cookies-policy/">Cookies</a>
+                    <a href="https://www.spotify.com/co-es/legal/privacy-policy/#s3">Información</a>
+                    <a href="https://www.spotify.com/co-es/safetyandprivacy">Centro de seguridad y privacidad</a>
                 </footer>
+                <div class="btn btn-light rounded-5 btn-outline-black mt-5 fs-4 fw-bold traductor">
+                    <a href="https://translate.google.com/?hl=es&sl=en&tl=es&op=translate"><img src="./img/internet.png" alt="internet" style="height: 2.4rem;">
+                    Español España</a>
+                </div>
+                
 
             </div>
         </aside>
@@ -92,54 +98,52 @@
             <h1>Canciones del momento</h1>
             <div class="carrosel1">
                 <div class="img1">
-                    <img class="img" src="./img/port1.jpeg" alt="La vida era más corta" />
-                    <h1>La vida era más corta</h1>
-                    <h2>Milo J</h2>
+                    <a href="album.html"><img class="img" src="./img/port1.jpeg" alt="La vida era más corta" />
+                        <h1>Luciernagas</h1>
+                        <h2>Milo J</h2>
+                    </a>
+
                 </div>
 
                 <div class="img1">
-                    <img class="img" src="./img/0x1900-000000-80-0-0.jpg" alt="505" />
-                    <h1>505</h1>
-                    <h2>Arctic Monkeys</h2>
+                    <a href="album.html"><img class="img" src="./img/0x1900-000000-80-0-0.jpg" alt="505" />
+                        <h1>505</h1>
+                        <h2>Arctic Monkeys</h2>
+                    </a>
+
                 </div>
 
                 <div class="img1">
-                    <img class="img" src="./img/bad_bunny_x100pre-portada.jpg" alt="DTMF" />
-                    <h1>DTMF</h1>
-                    <h2>Bad Bunny</h2>
+                    <a href="album.html"><img class="img" src="./img/bad_bunny_x100pre-portada.jpg" alt="DTMF" />
+                        <h1>Si Estuviésemos Juntos</h1>
+                        <h2>Bad Bunny</h2>
+                    </a>
+
                 </div>
 
                 <div class="img1">
-                    <img class="img" src="./img/lola_young_messy-portada.jpg" alt="Messy" />
-                    <h1>Messy</h1>
-                    <h2>Lola Young</h2>
+                    <a href="album.html"><img class="img" src="./img/lola_young_messy-portada.jpg" alt="Messy" />
+                        <h1>Messy</h1>
+                        <h2>Lola Young</h2>
+                    </a>
+
                 </div>
 
                 <div class="img1">
-                    <img class="img" src="./img/Diomedes Días.jpg" alt="La suerte está echada" />
-                    <h1>La suerte está echada</h1>
-                    <h2>Diomedes Díaz</h2>
+                    <a href=""> <img class="img" src="./img/port-sobr.jpg" alt="La suerte está echada" />
+                        <h1>Back to be friends</h1>
+                        <h2>Sombr</h2>
+                    </a>
+
                 </div>
                 <div class="img1">
-                    <img class="img" src="./img/Diomedes Días.jpg" alt="La suerte está echada" />
-                    <h1>La suerte está echada</h1>
-                    <h2>Diomedes Díaz</h2>
+                    <a href="album.html"><img class="img" src="./img/gost.png" alt="La suerte está echada" />
+                        <h1>Ghost</h1>
+                        <h2>justin Bieber</h2>
+                    </a>
+
                 </div>
-                <div class="img1">
-                    <img class="img" src="./img/Diomedes Días.jpg" alt="La suerte está echada" />
-                    <h1>La suerte está echada</h1>
-                    <h2>Diomedes Díaz</h2>
-                </div>
-                <div class="img1">
-                    <img class="img" src="./img/Diomedes Días.jpg" alt="La suerte está echada" />
-                    <h1>La suerte está echada</h1>
-                    <h2>Diomedes Díaz</h2>
-                </div>
-                <div class="img1">
-                    <img class="img" src="./img/Diomedes Días.jpg" alt="La suerte está echada" />
-                    <h1>La suerte está echada</h1>
-                    <h2>Diomedes Díaz</h2>
-                </div>
+
             </div>
 
             <h1>Artistas populares</h1>
@@ -163,6 +167,7 @@
                 </div>
 
                 <div class="img1">
+
                     <img class="img10" src="./img/ab67616100005174c865fa1b398bc1cd02649f51.jpeg" alt="Maluma" />
                     <h1>Maluma</h1>
                     <h2>Artista</h2>
@@ -179,72 +184,99 @@
                 </div>
                 <div class="img1">
                     <img class="img10" src="./img/justin.jpeg" alt="Maluma" />
-                    <h1>Maluma</h1>
+                    <h1>justin Bieber</h1>
                     <h2>Artista</h2>
                 </div>
                 <div class="img1">
-                    <img class="img10" src="./img/ab67616100005174c865fa1b398bc1cd02649f51.jpeg" alt="Maluma" />
-                    <h1>Maluma</h1>
+                    <img class="img10" src="./img/THE-WEEKND-by-Duncan-Loudon.webp" alt="weekend" />
+                    <h1>The weekend</h1>
                     <h2>Artista</h2>
                 </div>
-                <div class="img1">
-                    <img class="img10" src="./img/ab67616100005174c865fa1b398bc1cd02649f51.jpeg" alt="Maluma" />
-                    <h1>Maluma</h1>
-                    <h2>Artista</h2>
-                </div>
+                
             </div>
             <h1>Albumes y sencillos populares</h1>
             <div class="carrosel1">
+                
                 <div class="img1">
-                    <img class="img" src="./img/port1.jpeg" alt="La vida era más corta" />
-                    <h1>La vida era más corta</h1>
-                    <h2>Milo J</h2>
+                    <img class="img" src="./img/weekend.jpg" alt="La suerte está echada" />
+                    <h1>Star boy</h1>
+                    <h2>Diomedes Díaz</h2>
                 </div>
-
                 <div class="img1">
                     <img class="img" src="./img/0x1900-000000-80-0-0.jpg" alt="505" />
-                    <h1>505</h1>
+                    <h1>AM</h1>
                     <h2>Arctic Monkeys</h2>
                 </div>
 
                 <div class="img1">
                     <img class="img" src="./img/bad_bunny_x100pre-portada.jpg" alt="DTMF" />
-                    <h1>DTMF</h1>
+                    <h1>X100PRE</h1>
                     <h2>Bad Bunny</h2>
                 </div>
 
                 <div class="img1">
-                    <img class="img" src="./img/lola_young_messy-portada.jpg" alt="Messy" />
-                    <h1>Messy</h1>
-                    <h2>Lola Young</h2>
+                    <img class="img" src="./img/2201.jpg" alt="bad" />
+                    <h1>DTMF</h1>
+                    <h2>Bad Bunny</h2>
                 </div>
+                <div class="img1">
+                    <img class="img" src="./img/port1.jpeg" alt="La vida era más corta" />
+                    <h1>La vida era más corta</h1>
+                    <h2>Milo J</h2>
+                </div>
+                <div class="img1">
+                    <img class="img" src="./img/Diomedes Días.jpg" alt="La suerte está echada" />
+                    <h1>La suerte está echada</h1>
+                    <h2>Diomedes Díaz</h2>
+                </div>
+                
 
-                <div class="img1">
-                    <img class="img" src="./img/Diomedes Días.jpg" alt="La suerte está echada" />
-                    <h1>La suerte está echada</h1>
-                    <h2>Diomedes Díaz</h2>
-                </div>
-                <div class="img1">
-                    <img class="img" src="./img/Diomedes Días.jpg" alt="La suerte está echada" />
-                    <h1>La suerte está echada</h1>
-                    <h2>Diomedes Díaz</h2>
-                </div>
-                <div class="img1">
-                    <img class="img" src="./img/Diomedes Días.jpg" alt="La suerte está echada" />
-                    <h1>La suerte está echada</h1>
-                    <h2>Diomedes Díaz</h2>
-                </div>
-                <div class="img1">
-                    <img class="img" src="./img/Diomedes Días.jpg" alt="La suerte está echada" />
-                    <h1>La suerte está echada</h1>
-                    <h2>Diomedes Díaz</h2>
-                </div>
-                <div class="img1">
-                    <img class="img" src="./img/Diomedes Días.jpg" alt="La suerte está echada" />
-                    <h1>La suerte está echada</h1>
-                    <h2>Diomedes Díaz</h2>
-                </div>
             </div>
+            </div>
+            <hr>
+            <footer>
+                <div class="container text-centern mt-5 flex-wrap">
+                    <div class="row">
+                        <div class="col fila1">
+                            <h1>Empresa</h1>
+                            <p class="text-secondary fs-5 fw-bold">Acerca de</p>
+                            <p class="text-secondary fs-5 fw-bold">Empleo</p>
+                            <p class="text-secondary fs-5 fw-bold">For the Record</p>
+                        </div>
+                        <div class="col fila1">
+                            <h1>Comunidades</h1>
+                            <p class="text-secondary fs-5 fw-bold">Para artistas</p>
+                            <p class="text-secondary fs-5 fw-bold">Desarrolladores</p>
+                            <p class="text-secondary fs-5 fw-bold">Publicidad</p>
+                            <p class="text-secondary fs-5 fw-bold">Inversores</p>
+                            <p class="text-secondary fs-5 fw-bold">Proveedores</p>
+                            
+                        </div>
+                        <div class="col fila1">
+                            <h1>Enlaces útiles</h1>
+                            <p class="text-secondary fs-5 fw-bold">Asistencia</p>
+                            <p class="text-secondary fs-5 fw-bold">App gratis para móvil</p>
+                            <p class="text-secondary fs-5 fw-bold">Popular por país</p>
+                            <p class="text-secondary fs-5 fw-bold">Import your music</p>
+                        </div>
+                        <div class="col fila1">
+                            <h1>Planes de Spotify</h1>
+                            <p class="text-secondary fs-5 fw-bold">Premium Individual</p>
+                            <p class="text-secondary fs-5 fw-bold">Premium Duo</p>
+                            <p class="text-secondary fs-5 fw-bold">Premium Familiar</p>
+                            <p class="text-secondary fs-5 fw-bold">Premium para Estudiantes</p>
+                            <p class="text-secondary fs-5 fw-bold">Spotify Free</p>
+                        </div>
+
+                        <div class="col  d-flex justify-content-center align-items-center mt-5 redes">
+                            <a href="https://x.com/spotify" target="_blank"><img class="btn btn-dark rounded-5  " src="img/twitter-icon-free-png.webp" alt=""></a>
+                            <a href="https://www.facebook.com/SpotifyColombia/?brand_redir=6243987495" target="_blank"><img class="btn btn-dark rounded-5 m-3" src="img/Facebook-logo.png" alt=""></a>
+                            <a href="https://www.instagram.com/spotify"target="_blank"><img class="btn btn-dark rounded-5 " src="./img/Instagram_logo_2022.svg.png" alt=""></a>
+                        </div>
+                        <div class="text-center fw-bold fs-5 mt-5">&copy 2025 Spotify AB</div>
+                    </div>
+                </div>
+            </footer>
 
         </section>
     </main>
@@ -281,6 +313,9 @@
         </div>
 
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
